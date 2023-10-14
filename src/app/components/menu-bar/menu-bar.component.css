@@ -9,8 +9,17 @@
   gap: 1.5rem;
 }
 
+.menu-bar__icon {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   display: flex;
+}
+
+.hamburguer-menu {
+  display: none;
 }
 
 .menu ul {
@@ -27,12 +36,14 @@
   color: white;
 }
 
-.social-network {
-  justify-content: flex-end;
-}
-
 .social-network ul {
   display: flex;
   list-style: none;
   gap: 1.2rem;
+  align-items: center;
+}
+
+.social-network ul li {
+  display: flex;
+  align-items: center;
 }

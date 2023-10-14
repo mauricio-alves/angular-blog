@@ -1,11 +1,8 @@
 .card {
   display: flex;
   flex-direction: row;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   border-bottom: 1px solid gray;
-}
-
-.card__image {
 }
 
 .card__image img {

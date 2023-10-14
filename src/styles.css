@@ -20,3 +20,9 @@ html {
   scroll-behavior: smooth;
   padding: 0 50px;
 }
+
+@media (max-width: 425px) {
+  html {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card h2 {
+    font-size: 0.8rem;
+  }
+
+  .card__text {
+    padding-left: 0;
+    padding-right: 20px;
+  }}

@@ -1,15 +1,14 @@
 <div class="main-card">
   <div class="main-card__image">
-    <a href="#">
-      <img src="../../../assets/image-placeholder.jpg" alt="image placeholder" />
+    <a href="/content">
+      <img src="{{ mainCardImage }}" alt="image placeholder" />
     </a>
   </div>
   <div class="main-card__text">
-    <p class="main-card__date">January 11, 2002</p>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium</h2>
+    <p class="main-card__date">{{ mainCardDate }}</p>
+    <h2>{{ mainCardTitle }}</h2>
     <p class="main-card__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit,
-      laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi.
+      {{ mainCardDescription }}
     </p>
   </div>
 </div>

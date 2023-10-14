@@ -1,0 +1,11 @@
+@media (max-width: 425px) {
+  .main-card {
+    padding: 0;
+  }
+  .main-card h2 {
+    font-size: 1rem;
+  }
+  .main-card__image img {
+    min-width: 100%;
+  }
+}

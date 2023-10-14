@@ -1,0 +1,16 @@
+@media (max-width: 425px) {
+  .menu,
+  .social-network {
+    display: none;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+
+  .hamburguer-menu img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+  }
+}
