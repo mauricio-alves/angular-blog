@@ -1,0 +1,38 @@
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 10px 0;
+}
+
+.menu-bar__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  align-items: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-network {
+  justify-content: flex-end;
+}
+
+.social-network ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}

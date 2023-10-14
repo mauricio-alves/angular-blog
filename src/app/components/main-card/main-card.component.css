@@ -1,0 +1,26 @@
+.main-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 0 0;
+}
+
+.main-card__image {
+  text-align: center;
+}
+
+.main-card__image img {
+  width: 100%;
+  min-width: 740px;
+}
+
+.main-card__date {
+  font-size: 0.6rem;
+  color: gray;
+  padding: 10px 0;
+}
+
+.main-card__description {
+  font-size: 0.9rem;
+  padding-top: 20px;
+  color: gray;
+}

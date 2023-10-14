@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --text: #fff;
+  --background: #121212;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.2;
+  font-size: 1.2rem;
+  scroll-behavior: smooth;
+  padding: 0 50px;
+}

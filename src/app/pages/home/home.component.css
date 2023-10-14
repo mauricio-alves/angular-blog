@@ -1,0 +1,7 @@
+.articles {
+  display: flex;
+}
+
+.articles div {
+  max-width: 50%;
+}
