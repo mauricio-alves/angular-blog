@@ -17,4 +17,6 @@ export class MainCardComponent {
   mainCardTitle: string = '';
   @Input()
   mainCardDescription: string = '';
+  @Input()
+  mainId: number = 0;
 }

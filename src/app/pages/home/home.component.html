@@ -4,31 +4,13 @@
 
 <div class="articles">
   <div class="articles__main">
-    <app-main-card mainCardImage="../../../assets/image-placeholder.jpg" mainCardDate="January 11, 2002"
-      mainCardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"
-      mainCardDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit, laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi."></app-main-card>
+    <app-main-card [mainId]=mainCardData[0].id mainCardImage="{{mainCardData[0].image}}" mainCardDate="{{mainCardData[0].date}}" mainCardTitle="{{mainCardData[0].title}}" mainCardDescription="{{mainCardData[0].description}}"></app-main-card>
   </div>
   <div class="articles__others">
-    <app-card cardImage="../../../assets/image-placeholder.jpg" cardDate="January 11, 2002"
-      cardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"></app-card>
-    <app-card cardImage="../../../assets/image-placeholder.jpg" cardDate="January 11, 2002"
-      cardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"></app-card>
-    <app-card cardImage="../../../assets/image-placeholder.jpg" cardDate="January 11, 2002"
-      cardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"></app-card>
+    <app-card *ngFor="let item of mainCardData" [cardId]=item.id cardImage="{{ item.image }}" cardDate="{{item.date}}" cardTitle="{{item.title}}"></app-card>
   </div>
 </div>
 
 <div class="bottom-cards">
-  <app-main-card mainCardImage="../../../assets/image-placeholder.jpg" mainCardDate="January 11, 2002"
-    mainCardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"
-    mainCardDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit, laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi."></app-main-card>
-  <app-main-card mainCardImage="../../../assets/image-placeholder.jpg" mainCardDate="January 11, 2002"
-    mainCardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"
-    mainCardDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit, laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi."></app-main-card>
-  <app-main-card mainCardImage="../../../assets/image-placeholder.jpg" mainCardDate="January 11, 2002"
-    mainCardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"
-    mainCardDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit, laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi."></app-main-card>
-  <app-main-card mainCardImage="../../../assets/image-placeholder.jpg" mainCardDate="January 11, 2002"
-    mainCardTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit arum ullam animi accusantium"
-    mainCardDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempora totam accusamus praesentium quae impedit, laborum autem, pariatur eaque mollitia vitae eos enim dolores ipsa dolorum corporis explicabo, magnam animi."></app-main-card>
+  <app-main-card *ngFor="let item of bottomCardData" mainCardImage="{{ item.image }}" mainCardDate="{{item.date}}" mainCardTitle="{{item.title}}" mainCardDescription="{{item.description}}"></app-main-card>
 </div>

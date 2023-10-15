@@ -1,3 +1,4 @@
+import { mockData } from '../../data/mockData';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,4 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', './home.responsive.component.css'],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  mainCardData = mockData.slice(0, 3);
+  bottomCardData = mockData.slice(0, 4);
+}

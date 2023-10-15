@@ -12,4 +12,6 @@ export class CardComponent {
   cardDate: string = '';
   @Input()
   cardTitle: string = '';
+  @Input()
+  cardId: number = 0;
 }
